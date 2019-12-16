@@ -20,7 +20,7 @@ test("does not render a fake component", () => {
 	const { queryByTestId } = render(<Dashboard/>);
 	const extraFeatureComp = queryByTestId("extraFeatureComponent");
 	expect(extraFeatureComp).not.toBeInTheDocument();
-})
+});
 
 test("render control lock button", () => {
 	const { getByTestId } = render(<Dashboard/>);
@@ -33,3 +33,10 @@ test("render control door button", () => {
 	const button = getByTestId("controlDoorButton");
 	expect(button).toBeInTheDocument();
 });
+
+test("dashboard state `closed` and `locked` to initialize as false", () => {
+	const locked = false;
+	const closed = false;
+	const tree = render(<Dashboard locked={locked} closed={closed}/>);
+	expect(tree.baseElement).toMatchSnapshot();
+})

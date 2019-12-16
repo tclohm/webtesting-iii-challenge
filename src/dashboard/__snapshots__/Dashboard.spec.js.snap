@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dashboard state \`closed\` and \`locked\` to initialize as false 1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+      data-testid="displayComponent"
+    >
+      <div
+        class="led green-led"
+      >
+        Unlocked
+      </div>
+      <div
+        class="led green-led"
+      >
+        Open
+      </div>
+    </div>
+    <div
+      class="controls panel"
+      data-testid="controlComponent"
+    >
+      <button
+        class="toggle-btn"
+        data-testid="controlLockButton"
+        disabled=""
+      >
+        Lock Gate
+      </button>
+      <button
+        class="toggle-btn"
+        data-testid="controlDoorButton"
+      >
+        Close Gate
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`dashboard state \`closed\` initializes as false 1`] = `
+<body>
+  <div>
+    <div
+      class="display panel"
+      data-testid="displayComponent"
+    >
+      <div
+        class="led green-led"
+      >
+        Unlocked
+      </div>
+      <div
+        class="led green-led"
+      >
+        Open
+      </div>
+    </div>
+    <div
+      class="controls panel"
+      data-testid="controlComponent"
+    >
+      <button
+        class="toggle-btn"
+        data-testid="controlLockButton"
+        disabled=""
+      >
+        Lock Gate
+      </button>
+      <button
+        class="toggle-btn"
+        data-testid="controlDoorButton"
+      >
+        Close Gate
+      </button>
+    </div>
+  </div>
+</body>
+`;
